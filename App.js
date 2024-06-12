@@ -3,7 +3,7 @@ import {
   ViroARSceneNavigator,
   ViroText,
   ViroTrackingStateConstants,
-} from "@viro-community/react-viro";
+} from "@reactvision/react-viro";
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
 
@@ -11,7 +11,6 @@ const HelloWorldSceneAR = () => {
   const [text, setText] = useState("Initializing AR...");
 
   function onInitialized(state, reason) {
-    console.log("guncelleme", state, reason);
     if (state === ViroTrackingStateConstants.TRACKING_NORMAL) {
       setText("Hello World!");
     } else if (state === ViroTrackingStateConstants.TRACKING_UNAVAILABLE) {
