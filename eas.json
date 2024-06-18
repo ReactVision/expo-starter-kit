@@ -1,0 +1,37 @@
+{
+  "cli": {
+    "version": ">= 0.49.0",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "node": "18.17.0",
+      "channel": "viro-sk"
+    },
+    "preview": {
+      "distribution": "internal",
+      "node": "18.17.0",
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "viro-sk"
+    },
+    "production": {
+      "node": "18.17.0",
+      "channel": "viro-sk"
+    },
+    "productionAPK": {
+      "node": "16.19.1",
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "viro-sk"
+    }
+   
+  },
+  "submit": {
+    "production": {}
+  }
+}
